@@ -24,10 +24,14 @@ student = {
     },
 }
 
-print(student["cars"].keys())
-print(student["scores"].keys())
-print(student.keys())
-print(student.values())
-print(student.items())
-print(student.get("cars"))
-print(student.update(""))
+print("Cars Keys:", student["cars"].keys())
+print("Scores Keys:", student["scores"].keys())
+print("Student Keys:", student.keys())
+print("Student Values:", student.values())
+print("Student Items:", student.items())
+print("Student Cars:", student.get("cars"))
+
+# To demonstrate the update method, we'll create a new dictionary to update the student dictionary
+new_info = {"hobby": "coding"}
+student.update(new_info)
+print("Updated Student Dictionary:", student)
